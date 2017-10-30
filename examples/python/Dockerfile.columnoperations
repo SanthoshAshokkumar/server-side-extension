@@ -1,9 +1,11 @@
 FROM grpc/python
 
-ADD . /app
+ADD ./ColumnOperations /app
+ADD ./Generated /app
+
 WORKDIR /app
 ENTRYPOINT ["python"]
-CMD ["ColumnOperations/ExtensionService_column.py"]
+CMD ["ExtensionService_column.py"]
 EXPOSE 50053
 
 
