@@ -1,11 +1,10 @@
 FROM grpc/python
 
-ADD ./HelloWorld /app
-ADD ./Generated /app
+ADD . /app
 
 WORKDIR /app
 ENTRYPOINT ["python"]
-CMD ["ExtensionService_helloworld.py"]
+CMD ["HelloWorld/ExtensionService_helloworld.py"]
 EXPOSE 50052
 
 

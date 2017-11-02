@@ -3,12 +3,11 @@ FROM grpc/python
 RUN pip install -U pip
 RUN pip install numpy
 
-ADD ./FullScriptSupport /app
-ADD ./Generated /app
+ADD . /app
 
 WORKDIR /app
 ENTRYPOINT ["python"]
-CMD ["ExtensionService_Script.py"]
+CMD ["FullScriptSupport/ExtensionService_Script.py"]
 EXPOSE 50051
 
 
