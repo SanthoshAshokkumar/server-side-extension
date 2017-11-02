@@ -17,6 +17,6 @@ Execute one of the following commands to run the plugin of choice in a docker co
 
  
 
- - docker run -p 50051:50051 qlik-oss/sse-scriptsupport
- - docker run -p 50052:50052 qlik-oss/sse-helloworld
- - docker run -p 50053:50053 qlik-oss/sse-columnoperations
+ - docker run --rm -p 50051:50051 qlik-oss/sse-scriptsupport
+ - docker run --rm -p 50052:50052 qlik-oss/sse-helloworld
+ - docker run --rm -p 50053:50053 qlik-oss/sse-columnoperations
